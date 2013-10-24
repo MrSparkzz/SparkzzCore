@@ -1,0 +1,27 @@
+name: SparkzzCore
+version: 1
+main: net.sparkzz.core.Main
+author: MrSparkzz
+description: Core to all MrSparkzz mods
+
+commands:
+    enable:
+        description: Enable plugins.
+    disable:
+        description: Disable plugins.
+    refresh:
+        description: Reload a plugin.
+
+permissions:
+    sparkzz.*:
+        children:
+            sparkzz.enable: true
+            sparkzz.disable: true
+            sparkzz.refresh: true
+        default: op
+    sparkzz.enable:
+        default: op
+    sparkzz.disable:
+        default: op
+    sparkzz.refresh:
+        default: op
